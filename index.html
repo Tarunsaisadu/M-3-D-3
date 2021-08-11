@@ -200,9 +200,14 @@
             >
             <a href="#" class="btn btn-secondary my-2">Load Secondary Images</a>
           </p>
+
         </div>
       </section>
+        <div class="container">
+            <div class="row">
 
+            </div>
+        </div>
       
     
     <script
@@ -237,9 +242,10 @@
           });
       };
       const displayPic = (photos) => {
-        const row = document.querySelector(".row");
+        
 
         for (let pics of photos) {
+            const row = document.querySelector(".row");
           console.log(pics);
           row.innerHTML += `
                  <div class="col-12 col-sm-6 col-md-3">
@@ -253,6 +259,7 @@
                  `;
         }
       };
+        
     </script>
   </body>
 </html>
